@@ -8,18 +8,18 @@ int main() {
     string answer = "yes";
 
     while (answer != "no" && answer != "No") {
-        cout << "Enter one of the four operations (+, -, *, /): ";
+        cout << "Enter one of four operations (+, -, *, /): ";
         cin >> op;
 
-        cout << "Enter two numbers: ";
+        cout << "Enter two numbers (a, b): ";
         cin >> a >> b;
 
         if (!cin) {
-            cout << "Error: Invalid number input.\n";
+            cout << "Error: Invalid input.\n";
             break;
         }
 
-        cout << "Result: ";
+        cout << "The result: ";
 
         if (op == '+') {
             cout << a + b;
